@@ -1,0 +1,428 @@
+{
+  "checked": "2026-11-22",
+  "skills": 23,
+  "activities": 157,
+  "clientMatchedXp": 78,
+  "trainingSha256": "91a12668b5bcab929442c2595258943451fbd79e059f731f077745b85807f1e0",
+  "reference": "User-supplied RunicWorld Idle screenshots",
+  "artwork": "Original SVG icons and landscape",
+  "notes": "This is a standalone prototype. Recipe amounts, durations, economy, drops, farming cycles and combat are prototype rules, not verified live-server mechanics.",
+  "references": {
+    "cut-logs": {
+      "xp": 25,
+      "clientName": "Logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "burn-logs": {
+      "xp": 40,
+      "clientName": "Logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "cut-achey": {
+      "xp": 25,
+      "clientName": "Achey tree logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "cut-oak": {
+      "xp": 37.5,
+      "clientName": "Oak logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "burn-oak": {
+      "xp": 60,
+      "clientName": "Oak logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "cut-willow": {
+      "xp": 67.5,
+      "clientName": "Willow logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "burn-willow": {
+      "xp": 90,
+      "clientName": "Willow logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "cut-teak": {
+      "xp": 85,
+      "clientName": "Teak logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "burn-teak": {
+      "xp": 105,
+      "clientName": "Teak logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "cut-maple": {
+      "xp": 100,
+      "clientName": "Maple logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "burn-maple": {
+      "xp": 135,
+      "clientName": "Maple logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "cut-mahogany": {
+      "xp": 125,
+      "clientName": "Mahogany logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "burn-mahogany": {
+      "xp": 157.5,
+      "clientName": "Mahogany logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "cut-yew": {
+      "xp": 175,
+      "clientName": "Yew logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "burn-yew": {
+      "xp": 202.5,
+      "clientName": "Yew logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "cut-magiclogs": {
+      "xp": 250,
+      "clientName": "Magic logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "burn-magiclogs": {
+      "xp": 304,
+      "clientName": "Magic logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "cut-redwood": {
+      "xp": 380,
+      "clientName": "Redwood logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "burn-redwood": {
+      "xp": 350,
+      "clientName": "Redwood logs",
+      "source": "RunicWorld skill calculator"
+    },
+    "mine-clay": {
+      "xp": 5,
+      "clientName": "Clay",
+      "source": "RunicWorld skill calculator"
+    },
+    "mine-copper": {
+      "xp": 17.5,
+      "clientName": "Copper ore",
+      "source": "RunicWorld skill calculator"
+    },
+    "mine-tin": {
+      "xp": 17.5,
+      "clientName": "Tin ore",
+      "source": "RunicWorld skill calculator"
+    },
+    "mine-iron": {
+      "xp": 35,
+      "clientName": "Iron ore",
+      "source": "RunicWorld skill calculator"
+    },
+    "mine-silver": {
+      "xp": 40,
+      "clientName": "Silver ore",
+      "source": "RunicWorld skill calculator"
+    },
+    "mine-coal": {
+      "xp": 50,
+      "clientName": "Coal",
+      "source": "RunicWorld skill calculator"
+    },
+    "mine-gold": {
+      "xp": 65,
+      "clientName": "Gold ore",
+      "source": "RunicWorld skill calculator"
+    },
+    "mine-mithril": {
+      "xp": 80,
+      "clientName": "Mithril ore",
+      "source": "RunicWorld skill calculator"
+    },
+    "mine-adamant": {
+      "xp": 95,
+      "clientName": "Adamantite ore",
+      "source": "RunicWorld skill calculator"
+    },
+    "mine-runite": {
+      "xp": 125,
+      "clientName": "Runite ore",
+      "source": "RunicWorld skill calculator"
+    },
+    "fish-shrimp": {
+      "xp": 10,
+      "clientName": "Shrimps",
+      "source": "RunicWorld skill calculator"
+    },
+    "cook-shrimp": {
+      "xp": 30,
+      "clientName": "Shrimps",
+      "source": "RunicWorld skill calculator"
+    },
+    "fish-sardine": {
+      "xp": 20,
+      "clientName": "Sardine",
+      "source": "RunicWorld skill calculator"
+    },
+    "cook-sardine": {
+      "xp": 40,
+      "clientName": "Sardine",
+      "source": "RunicWorld skill calculator"
+    },
+    "fish-trout": {
+      "xp": 50,
+      "clientName": "Trout",
+      "source": "RunicWorld skill calculator"
+    },
+    "cook-trout": {
+      "xp": 70,
+      "clientName": "Trout",
+      "source": "RunicWorld skill calculator"
+    },
+    "fish-salmon": {
+      "xp": 70,
+      "clientName": "Salmon",
+      "source": "RunicWorld skill calculator"
+    },
+    "cook-salmon": {
+      "xp": 90,
+      "clientName": "Salmon",
+      "source": "RunicWorld skill calculator"
+    },
+    "fish-lobster": {
+      "xp": 90,
+      "clientName": "Lobster",
+      "source": "RunicWorld skill calculator"
+    },
+    "cook-lobster": {
+      "xp": 120,
+      "clientName": "Lobster",
+      "source": "RunicWorld skill calculator"
+    },
+    "fish-swordfish": {
+      "xp": 100,
+      "clientName": "Swordfish",
+      "source": "RunicWorld skill calculator"
+    },
+    "cook-swordfish": {
+      "xp": 140,
+      "clientName": "Swordfish",
+      "source": "RunicWorld skill calculator"
+    },
+    "fish-shark": {
+      "xp": 110,
+      "clientName": "Shark",
+      "source": "RunicWorld skill calculator"
+    },
+    "cook-shark": {
+      "xp": 210,
+      "clientName": "Shark",
+      "source": "RunicWorld skill calculator"
+    },
+    "arrow": {
+      "xp": 19.5,
+      "clientName": "Bronze arrows",
+      "source": "RunicWorld skill calculator"
+    },
+    "fletch-shortbow": {
+      "xp": 5,
+      "clientName": "Shortbow unstrung",
+      "source": "RunicWorld skill calculator"
+    },
+    "string-shortbow": {
+      "xp": 5,
+      "clientName": "Shortbow",
+      "source": "RunicWorld skill calculator"
+    },
+    "fletch-oak-shortbow": {
+      "xp": 16.5,
+      "clientName": "Oak shortbow unstrung",
+      "source": "RunicWorld skill calculator"
+    },
+    "string-oak-shortbow": {
+      "xp": 16.5,
+      "clientName": "Oak shortbow",
+      "source": "RunicWorld skill calculator"
+    },
+    "fletch-willow-shortbow": {
+      "xp": 33.3,
+      "clientName": "Willow shortbow unstrung",
+      "source": "RunicWorld skill calculator"
+    },
+    "string-willow-shortbow": {
+      "xp": 33.3,
+      "clientName": "Willow shortbow",
+      "source": "RunicWorld skill calculator"
+    },
+    "fletch-maple-shortbow": {
+      "xp": 50,
+      "clientName": "Maple shortbow unstrung",
+      "source": "RunicWorld skill calculator"
+    },
+    "string-maple-shortbow": {
+      "xp": 50,
+      "clientName": "Maple shortbow",
+      "source": "RunicWorld skill calculator"
+    },
+    "fletch-yew-shortbow": {
+      "xp": 67.5,
+      "clientName": "Yew shortbow unstrung",
+      "source": "RunicWorld skill calculator"
+    },
+    "string-yew-shortbow": {
+      "xp": 67.5,
+      "clientName": "Yew shortbow",
+      "source": "RunicWorld skill calculator"
+    },
+    "fletch-yew-longbow": {
+      "xp": 75,
+      "clientName": "Yew longbow unstrung",
+      "source": "RunicWorld skill calculator"
+    },
+    "string-yew-longbow": {
+      "xp": 75,
+      "clientName": "Yew longbow",
+      "source": "RunicWorld skill calculator"
+    },
+    "fletch-magic-longbow": {
+      "xp": 91.5,
+      "clientName": "Magic longbow unstrung",
+      "source": "RunicWorld skill calculator"
+    },
+    "string-magic-longbow": {
+      "xp": 91.5,
+      "clientName": "Magic longbow",
+      "source": "RunicWorld skill calculator"
+    },
+    "smelt-bronze": {
+      "xp": 6.2,
+      "clientName": "Bronze bar",
+      "source": "RunicWorld skill calculator"
+    },
+    "smelt-ironbar": {
+      "xp": 12.5,
+      "clientName": "Iron bar",
+      "source": "RunicWorld skill calculator"
+    },
+    "smelt-steel": {
+      "xp": 17.5,
+      "clientName": "Steel bar",
+      "source": "RunicWorld skill calculator"
+    },
+    "smelt-goldbar": {
+      "xp": 22.5,
+      "clientName": "Gold bar",
+      "source": "RunicWorld skill calculator"
+    },
+    "smelt-mithrilbar": {
+      "xp": 30,
+      "clientName": "Mithril bar",
+      "source": "RunicWorld skill calculator"
+    },
+    "smelt-adamantbar": {
+      "xp": 37.5,
+      "clientName": "Adamantite bar",
+      "source": "RunicWorld skill calculator"
+    },
+    "smelt-runebar": {
+      "xp": 50,
+      "clientName": "Runite bar",
+      "source": "RunicWorld skill calculator"
+    },
+    "tips": {
+      "xp": 12.5,
+      "clientName": "Bronze Arrowtips",
+      "source": "RunicWorld skill guide"
+    },
+    "forge-bronze-sword": {
+      "xp": 12.5,
+      "clientName": "Bronze sword",
+      "source": "RunicWorld skill calculator"
+    },
+    "forge-iron-sword": {
+      "xp": 25,
+      "clientName": "Iron Sword",
+      "source": "RunicWorld skill guide"
+    },
+    "forge-steel-sword": {
+      "xp": 37.5,
+      "clientName": "Steel Sword",
+      "source": "RunicWorld skill guide"
+    },
+    "forge-mithril-sword": {
+      "xp": 50,
+      "clientName": "Mithril Sword",
+      "source": "RunicWorld skill guide"
+    },
+    "forge-rune-sword": {
+      "xp": 75,
+      "clientName": "Rune Sword",
+      "source": "RunicWorld skill guide"
+    },
+    "gloves": {
+      "xp": 13.8,
+      "clientName": "Leather gloves",
+      "source": "RunicWorld skill calculator"
+    },
+    "clean-guam": {
+      "xp": 2.5,
+      "clientName": "Clean guam leaf",
+      "source": "RunicWorld skill calculator"
+    },
+    "silk-stall": {
+      "xp": 24,
+      "clientName": "Silk stall",
+      "source": "RunicWorld skill calculator"
+    },
+    "bird": {
+      "xp": 34,
+      "clientName": "Crimson swift",
+      "source": "RunicWorld skill calculator"
+    },
+    "copper-tail": {
+      "xp": 61.2,
+      "clientName": "Copper longtail",
+      "source": "RunicWorld skill calculator"
+    },
+    "chair": {
+      "xp": 87,
+      "clientName": "Wooden chair",
+      "source": "RunicWorld skill calculator"
+    },
+    "oak-chair": {
+      "xp": 120,
+      "clientName": "Oak chair",
+      "source": "RunicWorld skill calculator"
+    }
+  },
+  "combatRoster": {
+    "monsters": 36,
+    "defaultView": "Traditional progression across all areas",
+    "first": [
+      "Goblin",
+      "Chicken",
+      "Cow",
+      "Giant rat"
+    ],
+    "filters": [
+      "Area",
+      "Tier",
+      "Name"
+    ],
+    "notes": "Difficulty order is a prototype progression, separate from Slayer level requirements. Combat stats are prototype balance. Existing monster IDs preserved."
+  },
+  "items": 162,
+  "expansion": {
+    "fish": 18,
+    "spells": 20,
+    "runeTypes": 15,
+    "journalGoals": 17,
+    "magic": "Pure essence mining -> rune crafting -> per-cast costs estimated and consumed per completed fight",
+    "social": "D1-backed optional self-reported casual profiles and friend ranks",
+    "balance": "Expansion mechanics use prototype balance"
+  }
+}

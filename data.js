@@ -31,7 +31,46 @@
  const shop={feather:2,wool:3,flax:5,leather:8,newt:3,vial:5,'potato-seed':3,nails:2,staff:150,sapphire:50};
  const upgrades=[{id:'iron-axe',name:'Iron axe',icon:'axe',cost:250,speed:.08},{id:'steel-tools',name:'Steel tool set',icon:'tools',cost:1500,speed:.15},{id:'rune-tools',name:'Rune tool set',icon:'pickaxe',cost:12000,speed:.28},{id:'bronze-armour',name:'Bronze armour',icon:'shield',cost:180,armour:2},{id:'iron-armour',name:'Iron armour',icon:'shield',cost:900,armour:5},{id:'steel-armour',name:'Steel armour',icon:'shield',cost:3500,armour:10}];
  const dungeons=[['ice','Asgarnian Ice Dungeon',1,'A frozen cavern of pirates, skeletons and ice creatures.'],['brimhaven','Brimhaven Dungeon',1,'A jungle stronghold of demons and dragons.'],['edgeville','Edgeville Dungeon & Varrock Sewers',1,'Rats, goblins and the forgotten tunnels below the city.'],['desert','Kharidian Desert Caves',1,'Scorpions and lizards beneath the dunes.'],['security','Stronghold of Security',1,'The first steps of a slayer’s journey.'],['taverley','Taverley Dungeon',1,'Druids and demons in a winding underground realm.'],['tower','Slayer Tower',5,'The tower is quiet. That is rarely a good sign.'],['swamp','Lumbridge Swamp Caves',7,'Bugs and slimes in a damp underground maze.'],['fremennik','Fremennik Slayer Dungeon',10,'Frozen corridors and creatures of the north.'],['smoke','Smoke Dungeon',30,'A haunted desert cavern thick with ash.'],['southern','Southern Isafdar Caves',30,'Jungle, stone and forgotten passages.'],['stronghold','Stronghold Slayer Cave',50,'Deep below the tree gnome stronghold.'],['mos','Mos Le’Harmless Cave',58,'A dark island cavern filled with danger.'],['mourner','Mourner Tunnels',90,'Darkness beneath the city.']].map(([id,name,level,description])=>({id,name,level,description}));
- const monsters=[['rat','Giant rat','edgeville',1,5,1,1,3,2],['goblin','Goblin','security',1,7,1,2,4,3],['skeleton','Skeleton','ice',1,18,6,4,10,8],['pirate','Pirate','brimhaven',1,24,9,5,14,10],['scorpion','Scorpion','desert',1,16,6,4,9,7],['druid','Chaos druid','taverley',1,20,10,5,16,10],['crawler','Cave crawler','swamp',7,30,12,7,21,15],['banshee','Banshee','tower',15,40,20,8,30,20],['jelly','Jelly','fremennik',52,75,35,12,60,45],['dragon','Green dragon','brimhaven',30,100,48,17,90,70],['demon','Greater demon','taverley',45,120,60,20,120,90],['dust','Dust devil','smoke',65,105,60,17,100,100],['elf','Cave stalker','southern',30,70,35,12,60,45],['hound','Hellhound','stronghold',50,116,65,21,110,95],['horror','Cave horror','mos',58,90,65,19,100,90],['beast','Dark beast','mourner',90,220,100,32,280,220]].map(([id,name,dungeon,level,hp,defence,maxHit,xp,coins])=>({id,name,dungeon,level,hp,defence,maxHit,xp,coins}));
+ dungeons.unshift({id:'lumbridge',name:'Lumbridge Fields & Farms',level:1,description:'Goblins, chickens and cows. A familiar place to begin.'},{id:'training',name:'Classic Training Grounds',level:1,description:'From spiders and guards to giants and demons.'});
+ // Explicit familiar progression; Slayer requirements are separate from difficulty.
+ const monsters=[
+ ['goblin','Goblin','lumbridge',1,7,1,2,4,3,'Starter'],
+ ['chicken','Chicken','lumbridge',1,3,1,1,2,2,'Starter'],
+ ['cow','Cow','lumbridge',1,8,2,1,5,4,'Starter'],
+ ['rat','Giant rat','edgeville',1,5,1,1,3,2,'Starter'],
+ ['man','Man','lumbridge',1,7,2,1,4,5,'Starter'],
+ ['spider','Giant spider','training',1,10,3,2,6,5,'Early'],
+ ['scorpion','Scorpion','desert',1,16,6,4,9,7,'Early'],
+ ['minotaur','Minotaur','security',1,18,7,3,10,8,'Early'],
+ ['skeleton','Skeleton','ice',1,18,6,4,10,8,'Early'],
+ ['zombie','Zombie','edgeville',1,22,8,4,12,9,'Early'],
+ ['guard','Guard','training',1,24,10,4,14,11,'Early'],
+ ['hill-giant','Hill giant','edgeville',1,35,14,6,22,18,'Mid'],
+ ['druid','Chaos druid','taverley',1,20,10,5,16,10,'Mid'],
+ ['moss-giant','Moss giant','training',1,45,20,7,30,25,'Mid'],
+ ['pirate','Pirate','brimhaven',1,24,9,5,14,10,'Mid'],
+ ['crawler','Cave crawler','swamp',10,30,12,7,21,15,'Mid'],
+ ['banshee','Banshee','tower',15,40,20,8,30,20,'Mid'],
+ ['fire-giant','Fire giant','training',1,85,35,11,55,42,'Mid'],
+ ['lesser-demon','Lesser demon','training',1,80,38,12,60,45,'Mid'],
+ ['dragon','Green dragon','brimhaven',1,100,48,17,90,70,'High'],
+ ['blue-dragon','Blue dragon','taverley',1,110,52,18,100,80,'High'],
+ ['demon','Greater demon','taverley',1,120,60,20,120,90,'High'],
+ ['hound','Hellhound','stronghold',1,116,65,21,110,95,'High'],
+ ['elf','Elf warrior','southern',1,70,35,12,60,45,'High'],
+ ['bloodveld','Bloodveld','tower',50,120,55,18,125,100,'High'],
+ ['jelly','Jelly','fremennik',52,75,35,12,60,45,'High'],
+ ['red-dragon','Red dragon','brimhaven',1,140,70,23,150,120,'High'],
+ ['black-demon','Black demon','taverley',1,157,80,25,180,140,'High'],
+ ['black-dragon','Black dragon','brimhaven',1,190,95,28,220,180,'High'],
+ ['horror','Cave horror','mos',58,90,65,19,100,90,'High'],
+ ['dust','Dust devil','smoke',65,105,60,17,100,100,'High'],
+ ['gargoyle','Gargoyle','tower',75,150,75,24,180,160,'Endgame'],
+ ['nechryael','Nechryael','tower',80,170,85,26,210,180,'Endgame'],
+ ['abyssal-demon','Abyssal demon','tower',85,200,95,29,250,210,'Endgame'],
+ ['beast','Dark beast','mourner',90,220,100,32,280,220,'Endgame'],
+ ['king-black-dragon','King Black Dragon','training',1,260,140,40,420,400,'Boss']
+ ].map(([id,name,dungeon,level,hp,defence,maxHit,xp,coins,tier],order)=>({id,name,dungeon,level,hp,defence,maxHit,xp,coins,tier,order}));
  const goals=[{id:'logs',title:'A good beginning',text:'Chop 25 logs',kind:'method',target:'cut-logs',amount:25,reward:100},{id:'wood10',title:'A steady hand',text:'Reach Woodcutting level 10',kind:'level',target:'Woodcutting',amount:10,reward:200},{id:'cook10',title:'Dinner is served',text:'Cook 10 shrimps',kind:'method',target:'cook-shrimp',amount:10,reward:150},{id:'bronze5',title:'Forged from scratch',text:'Smelt 5 bronze bars',kind:'method',target:'smelt-bronze',amount:5,reward:200},{id:'rat5',title:'Below the surface',text:'Defeat 5 giant rats',kind:'kill',target:'rat',amount:5,reward:250}];
  const D={skills,icons,items,methods,shop,upgrades,dungeons,monsters,goals,version:1};if(typeof module!=='undefined')module.exports=D;else root.IdleData=D;
 })(typeof window!=='undefined'?window:globalThis);

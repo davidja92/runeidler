@@ -1,7 +1,7 @@
 {
   "checked": "2026-11-22",
   "skills": 23,
-  "activities": 98,
+  "activities": 157,
   "clientMatchedXp": 78,
   "trainingSha256": "91a12668b5bcab929442c2595258943451fbd79e059f731f077745b85807f1e0",
   "reference": "User-supplied RunicWorld Idle screenshots",
@@ -398,5 +398,31 @@
       "clientName": "Oak chair",
       "source": "RunicWorld skill calculator"
     }
+  },
+  "combatRoster": {
+    "monsters": 36,
+    "defaultView": "Traditional progression across all areas",
+    "first": [
+      "Goblin",
+      "Chicken",
+      "Cow",
+      "Giant rat"
+    ],
+    "filters": [
+      "Area",
+      "Tier",
+      "Name"
+    ],
+    "notes": "Difficulty order is a prototype progression, separate from Slayer level requirements. Combat stats are prototype balance. Existing monster IDs preserved."
+  },
+  "items": 162,
+  "expansion": {
+    "fish": 18,
+    "spells": 20,
+    "runeTypes": 15,
+    "journalGoals": 17,
+    "magic": "Pure essence mining -> rune crafting -> per-cast costs estimated and consumed per completed fight",
+    "social": "D1-backed optional self-reported casual profiles and friend ranks",
+    "balance": "Expansion mechanics use prototype balance"
   }
 }

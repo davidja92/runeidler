@@ -1,0 +1,13 @@
+name = "runic-idle"
+main = "dist/server/index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+AUTH_MODE = "device"
+ALLOWED_ORIGINS = "https://davidja92.github.io"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "runic-idle-social"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+migrations_dir = "drizzle"

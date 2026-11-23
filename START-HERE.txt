@@ -1,26 +1,7 @@
-RUNIC IDLE — PLAY THIS COPY
+RUNIC IDLE — GITHUB REPOSITORY
 
-Extract this ZIP into a folder. Double-click index.html to open the game.
-Keep data.js, engine.js, app.js, style.css, forest.svg and provenance.json
-beside index.html. No Python bot, game client or addon is needed.
+Upload these files/folders to your repository. In Settings > Pages, select main and /docs. Read GITHUB-SETUP.md for the shared friend/highscore backend. The game works without that backend; shared social features require its deployment and the API URL in docs/config.js.
 
-For a local web address and consistent browser save behavior, open a
-terminal in the extracted folder and run:
-  python -m http.server 8742
-Then open http://localhost:8742.
+Magic uses pure essence you mine, crafted runes and per-fight spell costs. There are 18 fish, 20 spells, 15 rune types, 157 activities and 162 items. Existing version-1 saves import through the game menu.
 
-Start trains one activity continuously. + Queue adds a chosen number of
-actions. Run queue starts the plan; Loop repeats it. Gather materials before
-crafting. Use the trading post for supplies and gear, bank stacks to sell
-items, and Slayer for combat. The adventure journal awards starter coins.
-
-Progress saves in this browser. Up to eight hours of offline progress are
-calculated when you return. Export a save from the menu before moving to
-another browser/device. A new origin/URL has a separate browser save.
-
-This is a standalone prototype inspired by the supplied screenshots, not
-the original idle game's source code. It has 23 skills and 98 activities.
-78 activity XP values were matched to locally extracted RunicWorld data;
-economy, timings, materials, farming cycles, combat and loot are prototype
-rules. There are no multiplayer accounts, chat, guilds or game-account sync.
-All images are original SVG.
+No personal saves, browser keys, credentials or local databases are included.
